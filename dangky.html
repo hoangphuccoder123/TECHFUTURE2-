@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- font roboto -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"/>
+      </head>
+      <body>
+        <!-- form signup -->
+<div class="signup">
+  <div class="signup__container">
+    <h1>Đăng Ký</h1>
+    <form action="">
+      <h5 style="text-align: left;"> Họ và Tên </h5>
+      <input type="text" class="input-signup-username" />
+      <h5 style="text-align: left;">Mật Khẩu </h5>
+      <input type="password" class="input-signup-password" />
+      <h5 style="text-align: left;"> Xác nhận Mật Khẩu </h5>
+      <input type="password" class="input-signup-password" />
+      <h5 style="text-align: left;">Loại tài khoản</h5>
+        <div class="account-type">
+          <select name="account-type">
+            <option value="employer">Nhà tuyển dụng</option>
+            <option value="job-seeker">Người xin việc</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="signup__signInButton">Đăng Ký</button>
+    </form>
+  </div>
+</div>
+<style>
+.account-type select {
+  width: 300%;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.account-type select:focus {
+  border-color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.signup {
+  max-width: 400px;
+  margin: 200px auto;
+  padding: 20px;
+  background-color: #ffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000; 
+  border-radius: 10px;
+}
+
+.signup__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup h1 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #000;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup input[type="text"],
+.signup input[type="password"] {
+  width: 240%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.signup h5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #666;
+}
+
+.account-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.account-type label {
+  margin-bottom: 10px;
+}
+
+.account-type input[type="radio"] {
+  margin-right: 10px;
+}
+
+.signup__signInButton {
+  width: 150px;
+  margin-left :130px;
+  height: 40px;
+  margin-top: 30px;
+  background-color: #38b6ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup__signInButton:hover {
+  background-color: #38b6ff;
+}
+
+.signup__registerButton {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.signup__registerButton:hover {
+  color: #23527c;
+}
+</style>
+    </body>
+  <script src="signup.js"></script>
+</html>

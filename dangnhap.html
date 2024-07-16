@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff;
+    }
+    .login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0 auto;
+    }
+    .login__container {
+      background-color: #ffffffdc;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      width: 300px;
+      height : 400px ;
+    }
+    .login__container h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      margin-top :20px ; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .input-login-username,
+    .input-login-password {
+      padding: 10px;
+      margin-bottom: 20px;
+      margin-top : 25px ;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 100%;
+    }
+    .login__signInButton {
+      background-color: #38B6FF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top : 20px ;
+    }
+    .login__signInButton:hover {
+      background-color: #38B6FF;
+    }
+    .login__registerButton {
+      text-decoration: none;
+      color: #337ab7;
+      margin-top: 20px;
+      display: block;
+      text-align: center;
+    }
+    .login__registerButton:hover {
+      color: #23527c;
+    }
+  </style>
+</head>
+<body>
+  <!-- form login -->
+  <div class="login">
+    <div class="login__container">
+      <h1>Đăng Nhập</h1>
+      <form>
+        <h5>Email</h5>
+        <input type="text" class="input-login-username" />
+        <h5>Password</h5>
+        <input type="password" class="input-login-password" />
+        <button type="submit" class="login__signInButton">Đăng Nhập</button>
+      </form>
+      <a href="dangky.html" class="login__registerButton"
+        >Tạo tài khoản mới</a
+      >
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
